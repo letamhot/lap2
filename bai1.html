@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finonaci</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+function fibonacci(number) {
+    if (number < 0) {
+        return - 1;
+    } else if (number == 0 || number == 1) {
+        return number;
+    } else {
+        return fibonacci ( number - 1 ) + fibonacci ( number - 2 );
+    }
+}
+let num = +prompt(" nhập số:");
+for(let i=0; i < num; i++){
+	let fi =fibonacci(i);
+	document.write(fi + "<br>");
+	console.log(fi+"<br>");
+}
+</script>
+</body>
+</html>
